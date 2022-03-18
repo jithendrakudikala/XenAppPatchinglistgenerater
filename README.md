@@ -9,8 +9,7 @@ script will generate phasewise servers by connecting to Xenapp sites.
   
 Output will be saved in common location for reference
 
-Script will update the respective SCCM collections using membership rule
-
+Script will update the respective SCCM collections using membership rule.
 
 # Pre-requisite
 1) Citrix Module
@@ -19,4 +18,7 @@ Script will update the respective SCCM collections using membership rule
 4) script needs input in 2 files
     1) 1 for UAT sites DDC's
     2) 2 for PROD sites DDC's
+5) the SCCM collections are devided based on phase and reboot schedule.
+    1) servers which have reboot schedule can be patched with supress reboot.
+    2) servers which doesn't have reboot schedule can be patched with reboot.
 
